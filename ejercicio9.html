@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panadería</title>
+</head>
+<body>
+  <script>
+    const precioHabitual = 12500;
+    const descuento = 0.60;
+
+    let barrasNoFrescas = parseInt(prompt("Ingrese el número de barras de pan no frescas vendidas: "));
+
+    let descuentoPorBarra = precioHabitual * descuento;
+    let precioConDescuento = precioHabitual - descuentoPorBarra;
+    let costeTotal = precioConDescuento * barrasNoFrescas;
+
+    document.write("Precio habitual de una barra: " + precioHabitual + "<br>");
+    document.write("Descuento por no ser fresca: " + descuentoPorBarra + "<br>");
+    document.write("Precio con descuento: " + precioConDescuento + "<br>");
+    document.write("Coste final total: " + costeTotal);
+  </script>
+</body>
+</html>

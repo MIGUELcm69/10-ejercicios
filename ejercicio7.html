@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let inversion = prompt("ingresa cantidad a invertir: ");
+        let InteresAnual = prompt("Ingrese la cantidad de interes anual: ");
+        let NumerosAños = prompt("Ingrese la cantidad de años de la invercion: "); 
+        let CapitalObtenido = 0; 
+        
+        InteresDecimal =  InteresAnual/100 
+        CapitalObtenido = inversion* (1 + InteresDecimal * NumerosAños)
+
+        document.write("Capital obtenido en la invercion es de: ", CapitalObtenido)
+    </script>
+</body>
+</html>
